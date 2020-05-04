@@ -1,10 +1,13 @@
 require "./lib/bookmark"
 
-describe Bookmark do 
+describe Bookmark do
 
   describe '#all' do
     it "returns @bookmarks array" do
-      expect(subject.all).to include("https://www.facebook.com/") 
-    end 
-  end 
-end 
+      bookmarks = described_class.all
+
+      expect(bookmarks).to include("https://www.facebook.com/")
+      expect(bookmarks).to include("https://www.instagram.com/")
+    end
+  end
+end
