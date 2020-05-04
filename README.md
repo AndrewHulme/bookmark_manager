@@ -36,20 +36,26 @@ I'd like <Task>.
 
 ////
 
-1 . Show a list of bookmarks: 
+1 . Show a list of bookmarks:
 
 As the user,
-So that I can view quickly all my bookmarks, 
+So that I can view quickly all my bookmarks,
 I'd like my bookmarks to show in a list
+
+2 . Add new bookmarks:
+
+As a user
+So that I can save a website
+I would like to add the site's address and title to bookmark manager
 
 # Domain Model #
 
 Object      | Message
 ____________|_______________
 (/homepage) |
-bookmarks   | show list of bookmarks 
+bookmarks   | show list of bookmarks
 
-homepage    | have button that directs to ALL 
+homepage    | have button that directs to ALL
 
-/bookmarks  | erb:views 
-            | 
+/bookmarks  | erb:views
+            |
