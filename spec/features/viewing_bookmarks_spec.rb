@@ -6,14 +6,14 @@ feature 'Viewing bookmarks' do
     expect(page).to have_content 'Bookmark Manager'
   end
 
-  scenario "Directs to /bookmarks" do 
+  scenario "Directs to /bookmarks" do
     visit ('/bookmarks')
     expect(page).to have_content 'All Bookmarks:'
-  end 
+  end
 
-  scenario "Shows array of bookmarks" do 
-    visit('/bookmarks') 
+  scenario "Shows array of bookmarks" do
+    visit('/bookmarks')
     expect(page).to have_content('https://www.facebook.com/')
     expect(page).to have_content('https://www.instagram.com/')
-  end 
+  end
 end
