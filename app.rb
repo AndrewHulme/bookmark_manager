@@ -3,6 +3,7 @@ require './lib/bookmark'
 
 class BookmarkManager < Sinatra::Base
   get '/' do
+    p ENV['ENVIRONMENT']
     'Bookmark Manager'
   end
 
