@@ -1,7 +1,11 @@
 <h> All Bookmarks: </h>
 
-<ol>
+<ul>
   <% @bookmarks.each do |bookmark| %>
-    <li> <%= bookmark %> </li>
+    <li>
+      <a href="<%= bookmark.url %>">
+        <%= bookmark.title %>
+      </a>
+    </li>
   <% end %>
-</ol>
+</ul>
